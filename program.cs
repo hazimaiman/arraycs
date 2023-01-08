@@ -7,6 +7,7 @@ namespace MyFirstProgram
         static void Main(string[] args)
         {
             //array = a variable that can store multiple value. fixed size
+            //foreach loop =  a simpler way to iterate over an array but its an less flexible
 
             String[] cars = new string[3];
 
@@ -21,6 +22,13 @@ namespace MyFirstProgram
             {
                 Console.WriteLine(cars[i]);
             }
+            
+            
+            foreach (String car in cars)
+            {
+                Console.WriteLine(car);
+            }
+
 
 
             Console.ReadKey();
